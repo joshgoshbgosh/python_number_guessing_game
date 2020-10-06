@@ -9,6 +9,7 @@ randomNumber = random.randint(1, 100)  #randint selects a random number from the
 guess = int(input("enter a number between 1 and 100: "))
 tries = 1
 
+
 while (guess != randomNumber):
     if tries > 5:        #number of tries available to beat the game
         print("You did not choose wisely! It was", randomNumber)
