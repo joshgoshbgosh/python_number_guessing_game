@@ -19,7 +19,7 @@ def play():
         print(turns, "guesses left")
         print(guess_word)
         if '_' not in guess_word:
-            print("You got it!")
+            print("You got!")
             break
 
         letter_guessed = (input("Guess a letter >")).lower()
@@ -28,7 +28,7 @@ def play():
         else:
             turns -= 1      #here is saying if a letter is already picked  to notify and take away tries.
         if turns >= 1:
-            print ("Sorry, not correct!")
+            print ("Keep going!")
         if turns == 0:
             print("Game Over!")
             print("Word was", random_word)
